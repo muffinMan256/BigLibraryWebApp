@@ -1,0 +1,142 @@
+
+nav {
+    background: white;
+    padding: 10px;
+    box-shadow: rgba(120, 126, 133, 0.2) 0px 8px 24px;
+    padding: 2em;
+    padding-bottom: 0.6em;
+    padding-top: 0.6em;
+  }
+  
+  nav ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 0px;
+    padding-left: 0px;
+    margin-bottom: 0px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;
+  }
+  
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all .5s;
+  }
+  
+  nav ul li a:hover {
+    color: #555;
+  }
+  
+  nav.stroke ul li a,
+  nav.fill ul li a {
+    position: relative;
+  }
+  
+  nav.stroke ul li a:after,
+  nav.fill ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: white(255, 255, 255);
+    height: 1px;
+  }
+  
+  nav.fill ul li a {
+    transition: all 2s;
+  }
+  
+  nav.fill ul li a:after {
+    text-align: left;
+    content: '.';
+    margin: 0;
+    opacity: 0;
+  }
+  
+  nav.fill ul li a:hover {
+    color: rgb(0, 0, 0);
+    z-index: 1;
+  }
+  
+  nav.fill ul li a:hover:after {
+    z-index: -10;
+    animation: fill 0.6s forwards;
+    -webkit-animation: fill 0.6s forwards;
+    -moz-animation: fill 0.6s forwards;
+    opacity: 1;
+  }
+  
+  .fill img {
+    width: 80px;
+    image-rendering: -moz-crisp-edges;
+    /* Firefox */
+    image-rendering: -o-crisp-edges;
+    /* Opera */
+    image-rendering: -webkit-optimize-contrast;
+    /* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;
+    text-align: center;
+  }
+
+  body{
+    background-color: beige;
+  }
+ 
+  .container{
+    width: 80px;
+    margin: 50px auto;
+    
+  }
+
+  .contact-box{
+    background-color: black;
+    display: flex;
+  }
+
+  .contact-left{
+    flex-basis: 60px;
+    padding: 40px 60px;
+  }
+  .contact-right{
+    flex-basis: 60px;
+    padding: 40px;
+    background-color: blanchedalmond;
+  }
+  
+
+
+body .container .container-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Optional: This ensures the content is centered vertically on the viewport. */
+}
+
+
+.card-img-top{
+    width: 200px;
+    height: 100px;
+}
+
+
+
