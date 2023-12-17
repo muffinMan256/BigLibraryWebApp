@@ -1,6 +1,1 @@
-# BE20_CR4_SassuAndrei_BigLibrary
-BE20 - CodeReview4
-
-
-The Big Library Application
-
+Task: As a Full Stack Web Developer you got your first full-stack project, the Big Library web application. The customer wants you to create a big list of all media available in the library (books, CDs, DVDs) and make it available over the web.
